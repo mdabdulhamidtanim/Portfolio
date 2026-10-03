@@ -3413,24 +3413,11 @@ img.u-pull-left {
     vertical-align : bottom;
 }
 
-.about-info__pic-block {
-    flex : 0 0 50%;
-    width : 50%;
-}
-
-.about-info__pic {
-    display : block;
-    width : 100%;
-    height : auto;
-    object-fit : cover;
-    margin : 0;
-}
-
 .about-info__text {
-    padding : 3rem 4rem;
+    padding     : var(--vspace-3_5) 4rem var(--vspace-2) 4rem;
     margin-left : 0;
-    width : 100%;
-    min-width : 0;
+    width       : 100%;
+    min-width   : 0;
 }
 
 .about-info__text .text-pretitle {
@@ -3546,7 +3533,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1300px) {
     .about-info__text {
-        padding : 2.5rem 3rem;
+        padding     : var(--vspace-2) 4rem var(--vspace-1_5) 4rem;
         margin-left : 0;
     }
 }
@@ -3559,8 +3546,9 @@ img.u-pull-left {
     }
 
     .about-info__text {
-        padding : 2rem 0;
+        padding     : var(--vspace-1) 0 0 0;
         margin-left : 0;
+        width       : 100%;
     }
 }
 
@@ -3577,24 +3565,6 @@ img.u-pull-left {
 
     .about-timelines .column+.column {
         margin-top : var(--vspace-1_5);
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .about-info {
-        width : 92%;
-        max-width : 600px;
-    }
-
-    .about-info__pic-block,
-    .about-info > .column {
-        flex : 0 0 100%;
-        width : 100%;
-    }
-
-    .about-info__text {
-        padding : 2rem 0;
-        margin-left : 0;
     }
 }
 
